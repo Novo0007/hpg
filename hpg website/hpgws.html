@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Prediction Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <style>
+     /* General Styles */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0f0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+    text-shadow: 0 0 10px #0f0;
+    position: relative;
+    animation: glitch 2s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+    20% {
+        transform: translate(-2px, 2px);
+    }
+    40% {
+        transform: translate(-2px, -2px);
+    }
+    60% {
+        transform: translate(2px, 2px);
+    }
+    80% {
+        transform: translate(2px, -2px);
+    }
+    100% {
+        transform: translate(0);
+    }
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+/* Hero Section */
+.hero {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 2px solid #0f0;
+}
+
+.hero h2 {
+    font-size: 28px;
+    margin: 0;
+    text-shadow: 0 0 10px #0f0;
+    overflow: hidden; /* Hide overflow */
+    white-space: nowrap; /* Keep text on one line */
+    border-right: 2px solid #0f0; /* Cursor effect */
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: #0f0;
+    }
+}
+
+.hero p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero .btn {
+    background: #0f0;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+.hero .btn:hover {
+    background: #0c0;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+    border-bottom: 2px solid #0f0;
+}
+
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #0f0;
+}
+
+.section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Game Container */
+.game-container {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #0f0;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+    }
+}
+
+/* Footer */
+footer {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid #0f0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+
+    .section p {
+        font-size: 14px;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Hacker Prediction Game</h1>
+        <p>Test your luck and strategy in this futuristic prediction game!</p>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to the Hacker Prediction Game</h2>
+        <p>Predict the right color and number to win big!</p>
+        <a href="#game" class="btn">Play Now</a><a href="https://novo0007.github.io/hpg/hpg/colour%20p.html" class="btn">Play Web ↗</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="section">
+        <h2>About the Game</h2>
+        <p>
+            The Hacker Prediction Game is a thrilling game where you predict the outcome of a randomly generated color and number. 
+            With a sleek hacker-themed design and glowing neon effects, this game offers an immersive experience. 
+            Place your bets, win rewards, and manage your virtual wallet!
+        </p>
+    </section>
+
+    <!-- Game Section -->
+    <section id="game" class="section">
+        <h2>Play the Game</h2>
+        <div class="game-container">
+            <!-- Embedded Game -->
+            <iframe src="https://novo0007.github.io/hpg/hpg/colour%20p.html" width="100%" height="900px" style="border: none;"></iframe>
+        </div>
+    </section>
+
+    <!-- How to Play Section -->
+    <section class="section">
+        <h2>How to Play</h2>
+        <p>
+            1. Select a color and a number.<br>
+            2. Enter your bet amount.<br>
+            3. Place your bet before the timer runs out.<br>
+            4. If your prediction matches the result, you win rewards!<br>
+            5. Manage your wallet to add or withdraw funds.
+        </p>
+    </section>
+
+    <!-- Wallet Management Section -->
+    <section class="section">
+        <h2>Wallet Management</h2>
+        <p>
+            - Add money to your wallet using Razorpay.<br>
+            - Withdraw your winnings directly to your account.<br>
+            - Track your balance and game history.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Hacker Prediction Game. All rights reserved. | NNC <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
