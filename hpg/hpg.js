@@ -13,7 +13,7 @@
             const timerDisplay = document.getElementById('timer');
             const historyList = document.getElementById('historyList');
 
-            let balance = parseInt(localStorage.getItem('balance')) || 0;
+            let balance = parseInt(localStorage.getItem('balance')) || 10;
             let selectedColor = null;
             let selectedNumber = null;
             let timer;
